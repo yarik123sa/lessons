@@ -1,0 +1,29 @@
+@import url("reset.css");
+
+
+[class*="__glory"]{
+    color: red;
+}
+.some-info > p{
+    color: blue;
+}
+
+.intresing-milan *{
+    color: rgb(99, 11, 11);
+}
+.info-milan ~ div{
+    color: blue;
+}
+.intresing-chealse p {
+    color: rgb(81, 0, 255);
+}
+.foot-name{
+    color: red;
+}
+.intresing-dynamo,
+.intresing-some-info{
+    color: red;
+}
+#intresing-some{
+    color: pink;
+}
