@@ -1,0 +1,67 @@
+/* RESET STYLES- */
+@import url("reset.css");
+
+
+/* Підключення шрифтів */
+@font-face {
+    font-family: 'Zaychik';
+    src: url('../fonts/Zaychik.woff2') format('woff2'),
+        url('../fonts/Zaychik.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800&display=swap");
+
+
+/* Основний код */
+body{
+    font-family: "Montserrat" sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+[class*="__text"]{
+    line-height: 1.5;
+}
+.country-name{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 2px 2px 5px #000;
+
+
+}
+.main__text{
+   text-indent: 50px;
+   color: red;
+   text-decoration: line-through;
+}
+.geografy-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.geografy__info > div{
+    color: blue;
+    
+}
+
+.population-title{
+    text-align: center;
+}
+.population__text{
+    text-align: right;
+    font-family: 'Roboto' , sans-serif;
+    text-decoration: underline;
+}
+
+.source{
+    text-decoration: underline;
+    color: yellow;
+}
+.lang__text{
+font-family: 'Zaychik'  , sans-serif;
+text-transform: uppercase;
+letter-spacing: 10px;
+white-space: nowrap;
+}
