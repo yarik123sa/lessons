@@ -1,0 +1,234 @@
+@import url('reset.css');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,regular,500&display=swap");
+body{
+    background-color: rgb(159, 226, 243);background-color: rgb(159, 226, 243);
+}
+.wrapper{
+    overflow: clip;
+    min-height: 100%;
+}
+main{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.main__elements{
+
+
+
+}
+.element__sun{
+ 
+}
+.sun{
+
+    width: 100px;
+    height: 100px;
+    background-color: rgb(241, 226, 7);
+    border-radius: 50%;
+    margin: 0 auto;
+    position: relative;
+    animation:sun 10s infinite linear;
+}
+@keyframes sun {
+    0% {
+     transform: rotate(0deg);   
+    }
+    50%{
+        transform: rotate(45deg);   
+    }
+    100% {
+        transform: rotate(90deg);  
+    }
+}
+.sun__line{
+    display: inline-block;
+    width: 2px;
+    height: 50px;
+    background-color: rgb(241, 226, 7);
+}
+.sun__line:nth-child(1){
+    position: absolute;
+    top: -53px;
+    left: 45px;
+}
+.sun__line:nth-child(2){
+    position: absolute;
+    top: -33px;
+    right: -3px;
+    transform: rotate(45deg);
+}
+.sun__line:nth-child(3){
+    position: absolute;
+
+    bottom: -53px;
+    left: 45px;
+}
+.sun__line:nth-child(4){
+    position: absolute;
+    bottom: -10px;
+    left: -3px;
+    transform: rotate(45deg);
+}
+ .sun__line:nth-child(5){
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    transform: rotate(90deg);
+}
+.sun__line:nth-child(6){
+    position: absolute;
+    top: -10px;
+    left: -3px;
+    transform: rotate(-45deg);
+}
+.sun__line:nth-child(7){
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    transform: rotate(90deg);
+}
+.sun__line:nth-child(8){
+    position: absolute;
+    bottom: -10px;
+    right: -3px;
+    transform: rotate(-45deg);
+}
+.sun__line:nth-child(9){
+    position: absolute;
+    bottom: -23px;
+    right: -12px;
+    transform: rotate(-45deg);
+}
+
+.car {
+    margin-top: 500px;
+background: rgb(255, 93, 93);
+width: 400px;
+height: 250px;
+border-radius: 60px 100px 0 0;
+
+position: relative;
+animation:car 5s forwards;
+
+
+
+}
+@keyframes car {
+    0% {
+        transform: translate(-100%);
+    }
+    30%{
+        transform: translate(0%, 0px);
+    }
+    50%{
+        transform: translate(0%, 0px) rotate(-10deg);
+    }
+    100% {
+        transform: translate(1200px , 0px);
+    }
+}
+.car::after {
+    content: '';
+    position: absolute;
+
+    width: 60px;
+    height: 100px;
+    background-color: aqua;
+    top: 0px;
+    left: 0px;
+    border-radius: 40px 0px 0px 0px;
+}
+.car::before{
+    content: '';
+
+    position: absolute;
+    background-color: aqua;
+    width: 150px;
+    height: 100px;
+    right: 0;
+    top: 0;
+    border-radius: 0px 150px 0px 0px;
+}
+
+.circle{
+    width: 100px;
+    height: 100px;
+    background: #000;
+  border-radius: 50%;
+
+ border: 3px dashed #fff;
+ animation: car-circle  5s  1 ease;
+}
+@keyframes car-circle {
+    0% {
+        transform: rotate(45deg);
+    }
+    30%{
+        transform: rotate(30deg);
+    }
+  50%{
+    transform: rotate(200deg);
+
+  }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.car__circle01{
+    position: absolute;
+    bottom: -50px;
+left: 10px;
+}
+.car__circle02{
+    position: absolute;
+    bottom: -50px;
+right: 10px;
+}
+.road__item{
+    height: 76px;
+    width: 100%;
+    background-color: rgb(82, 75, 75);
+}
+.road__line{
+    width: 100%;
+    border-bottom: 7px dashed white ;
+    animation:line-road 1s infinite linear;
+}
+@keyframes line-road {
+    0% {
+        
+    }
+    100% {
+        transform: translate(100px , 0);
+    }
+}
+.main__img img{
+    transition: all 0.3s ease 0s;
+}
+.main__img{
+    margin-top: 100px;
+    width: 370px;
+    margin-left: 100px;
+
+    position: relative;
+    overflow: hidden;
+
+}
+.main__img:before{
+    content: '';
+    position: absolute;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+ 
+}
+.main__img img:hover{
+    transform: scale(1.1);
+}
+.main__img:hover::before{
+  transform: translate(0 , -100%);
+
+}
