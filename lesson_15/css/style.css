@@ -1,0 +1,174 @@
+@import url('reset.css');
+/*  fonts */
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,500,400, 600,700&display=swap');
+
+[class*="__container"]{
+    max-width: 1230px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+
+    overflow: clip;
+    min-height: 100%;
+}
+.wrapper > main{
+    flex-grow: 1;
+    padding: 100px 0 ;
+}
+body{
+    font-family: 'Poppins' ,sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+
+.main__title {
+    font-weight: 500;
+font-size: 16px;
+display: flex;
+column-gap: 25px;
+
+margin-bottom: 40px;
+}
+.main__title::after{
+    content: '';
+ align-self: center;
+    flex: 0 1  464px; /* 464/1230 */
+    background: #000;
+    height: 2px;
+}
+.main__body {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    padding-bottom: 100px;
+}
+
+.achievement__item {
+
+
+}
+.item-achievement {
+    display: flex;
+   
+}
+.item-achievement__img {
+    flex: 0 1  60.650407%; 
+
+    overflow: hidden;
+
+}
+.item-achievement__img img{
+    transition: all 0.6s ease 0s;
+
+}
+.item-achievement__img img:hover {
+    transform: scale(1.1);
+
+}
+.item-achievement-info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding-left: 120px;
+    align-self: center;
+    flex: 0  1  39.349593%;
+
+
+    
+
+}
+.item-achievement__title {
+    font-size: 24px;
+    font-weight: 600;
+font-size: 24px;
+color: #333333;
+
+}
+.item-achievement__text {
+    font-weight: 400;
+font-size: 18px;
+
+
+line-height: 1.4;
+
+color: #9C9C9C;
+}
+
+
+.room__block-text {
+    max-width: 520px;
+    margin: 0 auto 53px;
+   
+}
+
+.room__title {
+    text-align: center;
+    font-weight: 700;
+font-size: 56px;
+}
+.room__title:not(:last-child){
+    margin-bottom: 40px;
+}
+
+
+.room__subtitle {
+    text-align: center;
+
+}
+.room__bg-img {
+    margin-bottom: 100px;
+}
+
+
+.text-body__column{
+    display: flex;
+    column-gap: 32px;
+    margin-bottom: 82px;
+
+}
+.text-body-left {
+    flex:  0  1 50%;
+}
+.text-body__title {
+    font-weight: 600;
+font-size: 24px;
+color: #333333;
+margin-bottom: 24px;
+}
+.text-body__descr {
+    font-weight: 400;
+
+line-height: 1.6;
+color: #9C9C9C;
+}
+.room__images{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.text-body__descr >p:not(:last-child) {
+
+margin-bottom: 30px;
+}
+.text-body-right {
+    flex:  0  1 50%;
+}
+
+
+.block-one {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.block-three {
+    display: flex;
+    justify-content: space-between;
+
+}
