@@ -110,7 +110,7 @@ color: #9C9C9C;
 .room__title {
     text-align: center;
     font-weight: 700;
-font-size: 54px;
+font-size: 53px;
 }
 .room__title:not(:last-child){
     margin-bottom: 40px;
