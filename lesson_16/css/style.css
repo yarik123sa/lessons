@@ -269,7 +269,7 @@ color: #3F3F3F; */
     margin-bottom: 35px;
 }
 .form-derails__item{
-    flex:  0 1 336px;
+    flex:  1 1 336px;
 }
 .form-derails__item input {
 width: 100%;
